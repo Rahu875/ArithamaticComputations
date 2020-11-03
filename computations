@@ -1,5 +1,9 @@
-y=$((a % b + c))
-echo "a%b+c = $y"
+declre -A arithamatic
+firstperations[1]=$z
+secondoperation[2]=$X
+thirdoperation[3]=$w
+fourthoperation[4]=$y
+echo ${arithamatic[@]}
 
 	
 
