@@ -1,3 +1,4 @@
-z=$(($a + $b * c))
-echo "a+b*c = $z"
+x=$((a * b + C ))
+echo "a*b+c = $x"
+
 
