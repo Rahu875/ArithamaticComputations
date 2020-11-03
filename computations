@@ -1,10 +1,19 @@
-#!/bin/bash
-read -p "Enter the value of a :" a
-read -p "Enter the value of b :" b
-read -p "Enter the value of c :" c
-
-array=( $z $x $w $y )
-echo ${array[@]}
+mysort(){
+    for((i=${#array[@]}-1;i>=0; i--)); 
+do
+        for((j=1;j<=$i; j++)); 
+do
+            if [[ ${array[j-1]} -gt ${array[j]} ]]; then
+                temp="${array[j-1]}"
+                array[j-1]="${array[j]}"
+                array[j]="$temp"
+            fi
+        done
+    done
+}
+declare -a array=($x $y $z $w)
+mysort $array
+echo  "${array[@]}"
 
 
 
