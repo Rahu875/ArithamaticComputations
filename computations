@@ -1,5 +1,6 @@
-w=$((c + a / b ))
-echo "c+a/b = $w"
+y=$((a % b + c))
+echo "a%b+c = $y"
+
 	
 
 
